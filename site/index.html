@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	 	<title>RIA Vignettes</title>
+        <link rel="icon" href="https://cache2.24chasa.bg/Images/Cache/160/Image_7034160_126.jpg">
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+	<form method="post" action="main.php">
+		Registration number : <input type="text" name="regnum"><br>
+		<select name="category">
+			<option value="K1">K1</option>
+			<option value="K2">K2</option>
+			<option value="K3">K3</option>
+		</select><br>
+
+		<select name="length">
+			<option value="NOW() + INTERVAL 1 WEEK">1 week</option>
+			<option value="NOW() + INTERVAL 1 MONTH">1 month</option>
+			<option value="NOW() + INTERVAL 1 YEAR">1 year</option>
+		</select><br>
+		<input type="submit" value="Submit">
+	</form>
+
+	<form method="post" action="check.php">
+		Registration number : <input type="text" name="regnum"><br>
+		<input type="submit" value="Submit">
+	</form>
+	</body>
+</html>
