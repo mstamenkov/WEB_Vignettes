@@ -18,30 +18,32 @@ else{
 $check = "SELECT * FROM vignettes_params WHERE regnum = '$regnum' AND Endtime > NOW()";
 $result_check = $conn->query($check);
 if ($result_check->num_rows > 0){
-	
-    echo "This number already have a vignettes.";
+    echo '<div style="font-size:12px;color:#000000;font-weight:bold;">This registration number already have a vignette.</div>';
     //sleep(5);
-	header( "Refresh:5; url=http://localhost/index.html", true, 303);
+	header( "Refresh:3; url=http://localhost/index.html", true, 303);
 die();
 }
-$delete_old = "DELETE FROM vignettes_params WHERE Endtime < NOW()";
-$conn->query($delete_old);
+//$delete_old = "DELETE FROM vignettes_params WHERE Endtime < NOW()";
+//$conn->query($delete_old);
+$sql_status = "UPDATE vignettes_params SET Status = 0 WHERE Endtime < NOW()";
+$result_status = $conn->query($sql_status);
 
 $sql = "INSERT INTO vignettes_params (Regnum, Category,Startdate,Endtime)
 values ('$regnum','$category',NOW(),$length)";
-if ($conn->query($sql)){
-echo "New record is inserted sucessfully";
-
+if(strlen($regnum) >= 7){
+    if ($conn->query($sql)){
+        echo '<div style="font-size:12px;color:#000000;font-weight:bold;">New record is inserted sucessfully</div>';
+        header( "Refresh:3; url=http://localhost/index.html", true, 303);
+    }
 }
 else{
-echo "Error: ". $sql ."
-". $conn->error;
+echo "Error: ". $sql ."". $conn->error;
 }
 $conn->close();
 }
 
 } else{
-echo "Registration should not be empty";
+echo "Registration number should not be empty";
 die();
 }
 ?>
