@@ -1,0 +1,66 @@
+ul {
+list-style-type: none;
+padding: 0;
+padding-bottom: 0.5%;
+overflow: hidden;
+background-image: url(/textures/vf.png);
+       
+}   
+            
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-family: verdana;
+    font-size: 18px;
+}
+            
+            
+li a:hover:not(.active){
+    background-color: #11a3f0;
+}
+            
+             
+#active {
+    background-color: #4CAF50;
+}
+           
+
+#active2 {
+    background-color: #288ed9;
+}
+           
+body {
+    background-image: url("http://www.spekulanti.com/i/2014/05/Trace_detelina.jpg");
+    background-repeat: repeat-y;
+    background-size: cover;
+    margin:0 5%;
+            
+}
+#text{
+    font-family: monospace;
+    font-size: 20px;
+    padding-top:1%;
+    margin-bottom: 1%;
+    text-align: center;
+    color: white;
+}
+.header img {
+    float: left;
+    width: 140px;
+    height: 120px;
+    top: 100px;  
+    padding: 5px;
+}
+
+.block{
+    background-color: rgba(144, 144, 144, 0.55);
+    
+}

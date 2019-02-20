@@ -5,27 +5,44 @@
         <link rel="icon" href="https://cache2.24chasa.bg/Images/Cache/160/Image_7034160_126.jpg">
         <meta charset="utf-8">
         <link rel="stylesheet" href="style.css">
+        <meta http-equiv="content-language" content="en-us, bg" />
 	</head>
 	<body>
-	<form method="post" action="main.php">
-		Registration number : <input type="text" name="regnum"><br>
-		<select name="category">
-			<option value="K1">K1</option>
-			<option value="K2">K2</option>
-			<option value="K3">K3</option>
-		</select><br>
+        <div class="header_box">
+            <ul>
+                <div class="header">
+                    <img src="http://www.api.bg/themes/api/images/logo.png" alt="logo">
+                </div>
+                <div id="text">
+                    <span style="font-weight: bold; margin-bottom: 1%">Агенция "Пътна инфраструктура"</span><br/>Нацинално ТОЛ управление
+                </div>
+                <span><li  style="margin-left: 20%" ><a href ="#">Начало</a></li></span>
+                <span><li><a href ="bnt-predavaniq.html">За еВинетките</a></li></span>
+                <!-- <span><li style="float:right"><a id="active" href="http://tv.bnt.bg">Контакти</a></li></span>
+                <span><li style="float:right"><a id="active2" href="bnt-euro2016.html">UEFA Euro 2016</a></li></span> -->
+           </ul>
+        </div>
+	   <div class="block">
+            <form method="post" action="main.php">
+            Registration number : <input type="text" name="regnum"><br>
+            <select name="category">
+                <option value="K1">K1</option>
+                <option value="K2">K2</option>
+                <option value="K3">K3</option>
+            </select><br>
 
-		<select name="length">
-			<option value="NOW() + INTERVAL 1 WEEK">1 week</option>
-			<option value="NOW() + INTERVAL 1 MONTH">1 month</option>
-			<option value="NOW() + INTERVAL 1 YEAR">1 year</option>
-		</select><br>
-		<input type="submit" value="Submit">
-	</form>
+            <select name="length">
+                <option value="NOW() + INTERVAL 1 WEEK">1 week</option>
+                <option value="NOW() + INTERVAL 1 MONTH">1 month</option>
+                <option value="NOW() + INTERVAL 1 YEAR">1 year</option>
+            </select><br>
+            <input type="submit" value="Submit">
+        </form>
 
-	<form method="post" action="check.php">
-		Registration number : <input type="text" name="regnum"><br>
-		<input type="submit" value="Submit">
-	</form>
+        <form method="post" action="check.php">
+            Registration number : <input type="text" name="regnum"><br>
+            <input type="submit" value="Submit">
+        </form>
+        </div>
 	</body>
 </html>

@@ -5,6 +5,7 @@
         <link rel="icon" href="https://cache2.24chasa.bg/Images/Cache/160/Image_7034160_126.jpg">
         <link rel="stylesheet" href="style.css">
         <meta charset="utf-8">
+        <meta http-equiv="content-language" content="en-us, bg" />
 	</head>
 	<body>
 <?php
