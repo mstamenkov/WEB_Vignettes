@@ -3,7 +3,7 @@ list-style-type: none;
 padding: 0;
 padding-bottom: 0.5%;
 overflow: hidden;
-background-image: url(/textures/vf.png);
+background-image: url(./textures/vf.png);
        
 }   
             
@@ -64,3 +64,21 @@ body {
     background-color: rgba(144, 144, 144, 0.55);
     
 }
+
+.bottom-page{
+    color: white;
+}
+
+.bottom-page img{
+    margin-bottom: 10px;
+    max-width: 50%;
+    min-width: 35%;
+    height: auto;
+    width: auto;
+
+}
+
+.bottom-page p{
+    margin: 0 19%;
+}
+
