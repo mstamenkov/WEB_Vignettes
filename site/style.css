@@ -4,6 +4,7 @@ padding: 0;
 padding-bottom: 0.5%;
 overflow: hidden;
 background-image: url(./textures/vf.png);
+margin: 16px 0;
        
 }   
             
@@ -25,11 +26,13 @@ li a {
             
 li a:hover:not(.active){
     background-color: #11a3f0;
+    color: white;
+    text-decoration: none;
 }
             
              
 #active {
-    background-color: #4CAF50;
+    background-color: #5ebdef;
 }
            
 
@@ -38,10 +41,11 @@ li a:hover:not(.active){
 }
            
 body {
-    background-image: url("http://www.spekulanti.com/i/2014/05/Trace_detelina.jpg");
+    background-image: url(textures/block_background.jpg);
     background-repeat: repeat-y;
     background-size: cover;
     margin:0 5%;
+    line-height: 1.2;
             
 }
 #text{
@@ -54,25 +58,27 @@ body {
 }
 .header img {
     float: left;
-    width: 140px;
-    height: 120px;
+    width: 150px;
+    height: 130px;
     top: 100px;  
     padding: 5px;
 }
 
 .block{
     background-color: rgba(144, 144, 144, 0.55);
+    padding-bottom: 30%;
     
 }
 
 .bottom-page{
     color: white;
+    margin-top: 1%;
 }
 
 .bottom-page img{
+    width: 17% !important;
     margin-bottom: 10px;
-    max-width: 50%;
-    min-width: 35%;
+    
     height: auto;
     width: auto;
 
@@ -80,5 +86,32 @@ body {
 
 .bottom-page p{
     margin: 0 19%;
+}
+
+#dp{
+    width: 20% !important;
+    margin-bottom: 3%;
+    margin-top: 1%;
+}
+
+marquee{
+    background-color: #77c0ed;
+    color: white;
+}
+
+.block-text{
+    display: inline;
+    color: white;
+}
+
+.block-text img{
+    width: 30%;
+    float: right;
+}
+
+.block-text p{
+    font-size: 20px;
+    margin: 1%;
+    line-height: 1.3;
 }
 
