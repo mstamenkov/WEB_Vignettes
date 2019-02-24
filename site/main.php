@@ -9,7 +9,7 @@ $length = filter_input(INPUT_POST, 'length');
 
 $host = "localhost";
 $dbusername = "root";
-$dbpassword = "kiselomlqko";
+$dbpassword = "root";
 $dbname = "vignettes";
 // Create connection
 $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
