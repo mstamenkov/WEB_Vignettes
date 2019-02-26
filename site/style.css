@@ -5,6 +5,7 @@ padding-bottom: 0.5%;
 overflow: hidden;
 background-image: url(./textures/vf.png);
 margin: 16px 0;
+text-align: center;
        
 }   
             
@@ -86,6 +87,7 @@ body {
 
 .bottom-page p{
     margin: 0 19%;
+    font-size: 16px;
 }
 
 #dp{
@@ -97,6 +99,7 @@ body {
 marquee{
     background-color: #77c0ed;
     color: white;
+    height: 10%;
 }
 
 .block-text{

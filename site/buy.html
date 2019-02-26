@@ -12,34 +12,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	
 	</head>
-	<!DOCTYPE html>
-<html>
-	<head>
-	 	<title>RIA Vignettes</title>
-        <link rel="icon" href="https://cache2.24chasa.bg/Images/Cache/160/Image_7034160_126.jpg">
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
-        <meta http-equiv="content-language" content="en-us, bg" />
-	</head>
 	<body>
         <div class="header_box">
             <ul>
                 <div class="header">
-                    <img src="http://www.api.bg/themes/api/images/logo.png" alt="logo">
+                    <img src="./textures/logo.png" alt="logo">
                 </div>
                 <div id="text">
                     <span style="font-weight: bold; margin-bottom: 1%">Народна република България</span><br>Министерство на транспорта<br/>Главно управление на пътищата
                 </div>
-                <span><li  style="margin-left: 20%" ><a href ="./index.html">Начало</a></li></span>
-                <span><li><a href ="#">За еВинетките</a></li></span>
-                <span><li><a href ="#" id="active">Купи</a></li></span>
-                <span><li><a href ="./check.html">Провери валидност</a></li></span>
-                <!-- <span><li style="float:right"><a id="active" href="http://tv.bnt.bg">Контакти</a></li></span>
-                <span><li style="float:right"><a id="active2" href="bnt-euro2016.html">UEFA Euro 2016</a></li></span> -->
+                <div style="display: inline-flex">
+                    <span><li><a href ="./index.html">Начало</a></li></span>
+                    <span><li><a href ="#">За еВинетките</a></li></span>
+                    <span><li><a href ="#" id="active">Купи</a></li></span>
+                    <span><li><a href ="./check.html">Провери валидност</a></li></span>
+                    <!-- <span><li style="float:right"><a id="active" href="http://tv.bnt.bg">Контакти</a></li></span>
+                    <span><li style="float:right"><a id="active2" href="bnt-euro2016.html">UEFA Euro 2016</a></li></span> -->
+                </div>
            </ul>
         </div>
 	   <div class="block">
-           <marquee direction="left">Главно управление на пътищата към МТ, Ви уведомява, че автомобилите движещи се без заплатена винетна такса ще се глобяват с акт на стойност 3,50 ЛВ.</marquee>
+           <marquee direction="left"  scrollamount="8">Главно управление на пътищата към МТ, Ви уведомява, че автомобилите движещи се без заплатена винетна такса ще се глобяват с акт на стойност 3,50 ЛВ.</marquee>
             <form method="post" action="main.php">
             Registration number : <input type="text" name="regnum" style="text-transform:uppercase" maxlength="8" autocomplete="off"><br>
             <select name="category">
@@ -77,13 +70,13 @@
 					<div class="row">
 						<div class="col-6 col-sm-6">
 				            <img src="textures/gerb_small.png" alt="Герб" class="img-fluid">
-				            <p class="text">Министерство на транспорта <br> &#9742; 02/ 247 855</p>
+				            <p class="text">Министерство на транспорта <br> &#9743; 02/ 247 855</p>
 							
 						</div>
 						<div class="col-6 col-sm-6">
 							
-								<img id="dp" src="http://www.api.bg/themes/api/images/logo.png" alt="Главно управление на пътищата" class="img-fluid" />
-                            <p class="text">Главно управление на пътищата <br> &#9742; 02/ 647 865</p>
+								<img id="dp" src="./textures/logo.png" alt="Главно управление на пътищата" class="img-fluid" />
+                            <p class="text">Главно управление на пътищата <br> &#9743; 02/ 647 865</p>
 							
 						</div>
 					</div>
