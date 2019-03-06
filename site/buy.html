@@ -19,7 +19,7 @@
                     <img src="./textures/logo.png" alt="logo">
                 </div>
                 <div id="text">
-                    <span style="font-weight: bold; margin-bottom: 1%">Народна република България</span><br>Министерство на транспорта<br/>Главно управление на пътищата
+                    <span style="font-weight: bold; margin-bottom: 1%">Народна Република България</span><br>Министерство на транспорта<br/>Главно управление на пътищата
                 </div>
                 <div style="display: inline-flex">
                     <span><li><a href ="./index.html">Начало</a></li></span>
@@ -36,11 +36,16 @@
            <marquee direction="left"  scrollamount="8">Главно управление на пътищата към МТ, Ви уведомява, че автомобилите движещи се без заплатена винетна такса ще се глобяват с акт на стойност 3,50 ЛВ.</marquee>
             <form method="post" action="main.php">
             Registration number : <input type="text" name="regnum" style="text-transform:uppercase" maxlength="8" autocomplete="off"><br>
-            <select name="category">
-                <option value="K1">K1</option>
-                <option value="K2">K2</option>
-                <option value="K3">K3</option>
-            </select><br>
+            <fieldset>
+              <div class="some-class">
+    Category : <label for="K1">K1</label>
+                <input type="radio" class="radio" name="category" value="K1" id="K1" />
+                <label for="K2">K2</label>
+                <input type="radio" class="radio" name="category" value="K2" id="K2" />
+                <label for="K3">K3</label>
+                  <input type="radio" class="radio" name="category" value="K3" id="K3" />
+              </div>
+            </fieldset>
                 
             <select name="nationality">
                 <option value="Afghanistan">Afghanistan</option>
