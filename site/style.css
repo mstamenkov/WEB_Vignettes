@@ -144,3 +144,22 @@ label{
     margin-left: 0.5%;
 }
 
+.buy-block{
+    color: white;
+    font-weight: 600;
+    margin: 0.5%;
+}
+
+.field{
+    margin-top: 8px;
+}
+
+.block-buy-check{
+    color:white;
+    font-family: verdana;
+    font-size: 16px;
+    margin: 1%;
+    
+}
+
+

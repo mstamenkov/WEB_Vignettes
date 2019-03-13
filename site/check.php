@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 	<head>
-	 	<title>RIA Vignettes</title>
+	 	<title>ГУП - Информационна система</title>
         <link rel="icon" href="https://cache2.24chasa.bg/Images/Cache/160/Image_7034160_126.jpg">
-        <link rel="stylesheet" href="style.css">
         <meta charset="utf-8">
+        <link href="https://www.bgtoll.bg/content/assets/plugins/bootstrap-4.0.0/css/bootstrap.min.css" id="bootstrap-css" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="style.css" type="text/css">
         <meta http-equiv="content-language" content="en-us, bg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	</head>
 	<body>
-        <div class="block"> 
+        <div class="block block-buy-check"> 
 <?php
 $regnum = filter_input(INPUT_POST, 'regnum');
 $regnum = strtoupper($regnum);
@@ -40,10 +42,12 @@ if ($result->num_rows > 0) {
     }
 } else {
     echo "There is no results for registration number $regnum";
+    die();
 }
 $conn->close();
 ?>
-    <a href="./index.html">Back</a>
+    <a href="./index.html" style="color:black">Back</a>
         </div>
+        
 	</body>
 </html>
