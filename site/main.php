@@ -20,7 +20,7 @@ if (!empty($regnum)){
 
     $host = "localhost";
     $dbusername = "root";
-    $dbpassword = "root";
+    $dbpassword = "kiselomlqko";
     $dbname = "vignettes";
     // Create connection
     $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
