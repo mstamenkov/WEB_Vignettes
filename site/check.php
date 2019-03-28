@@ -16,7 +16,7 @@ $regnum = filter_input(INPUT_POST, 'regnum');
 $regnum = strtoupper($regnum);
 $servername = "localhost";
 $username = "root";
-$password = "kiselomlqko";
+$password = "root";
 $dbname = "vignettes";
 
 // Create connection
